@@ -1,0 +1,30 @@
+
+ng new cadastroFuncionarioAngular8Firebase
+
+cd cadastroFuncionarioAngular8Firebase
+
+npm install firebase@5.5.5 @angular/fire@5.1.0 --save
+
+configurar o env com as informações do firebase
+
+importar e inicializar o AngularFirebaseModule no app.module
+
+criando os components
+ng g c funcionarios/list
+ng g c funcionarios/edit
+
+criando os services
+ng g s funcionarios/funcionario
+ng g s funcionarios/funcionario-data
+
+criando o model
+ng g class funcionarios/models/funcionario --type=model
+
+instalar bootstrap
+npm install font-awesome bootstrap @ng-bootstrap/ng-bootstrap --save
+importar o bootstrap
+angular.json
+ "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              ...
+            ],
